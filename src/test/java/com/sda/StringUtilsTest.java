@@ -1,15 +1,15 @@
 package com.sda;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.EmptySource;
-import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 class StringUtilsTest {
 
     @Test
+    @Disabled
     void testCapitalizeSuccess() {
         // given
         String name = "FILIP";
@@ -35,8 +35,6 @@ class StringUtilsTest {
         Assertions.assertNull(actualName);
     }
 
-//    @EmptySource(Enum.class)
-//    @MethodSource("")
     @ParameterizedTest
     @ValueSource(strings = {"       ", " "})
     void testCapitalizeBlank(String expectedName) {

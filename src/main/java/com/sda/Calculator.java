@@ -3,7 +3,6 @@ package com.sda;
 public class Calculator {
 
     public double sumArray(double[] arr) {
-
         double result = 0;
 
         for (double numb : arr) {
@@ -30,6 +29,4 @@ public class Calculator {
         }
         return a / b;
     }
-
-
 }

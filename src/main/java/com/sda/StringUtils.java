@@ -1,7 +1,5 @@
 package com.sda;
 
-import java.util.Objects;
-
 public class StringUtils {
 
 //  Napisz metodę "capitalize", która zwróci Twoje imię napisane z duzej litery.
@@ -23,6 +21,5 @@ public class StringUtils {
 
         return firstLetter + secondPart;
     }
-
 
 }
